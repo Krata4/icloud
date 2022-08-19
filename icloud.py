@@ -2,7 +2,7 @@ from pyicloud import PyiCloudService
 import asyncio
 import sys, getopt
 
-username = "xourusername"
+username = "yourusername"
 
 async def icloud():
     api = PyiCloudService(username)
