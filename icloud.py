@@ -6,7 +6,7 @@ username = "yourusername"
 
 async def icloud():
     api = PyiCloudService(username)
-    opts, args = getopt.getopt(sys.argv[1:],"dls:p:",["devices","localization=","status=","playsound="])
+    opts, args = getopt.getopt(sys.argv[1:],"dl:s:p:",["devices","localization=","status=","playsound="])
     for opt, arg in opts:
         if opt in ("-d", "--devices"):
             print(api.devices)
