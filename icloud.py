@@ -4,9 +4,9 @@ import sys, getopt
 
 username = "yourusername"
 
-async def run():
+async def icloud():
     api = PyiCloudService(username)
-    opts, args = getopt.getopt(sys.argv[1:],"dlsp:",["devices","localization=","status=","play_sound="])
+    opts, args = getopt.getopt(sys.argv[1:],"dls:p:",["devices","localization=","status=","playsound="])
     for opt, arg in opts:
         if opt in ("-d", "--devices"):
             print(api.devices)
@@ -14,7 +14,8 @@ async def run():
             print(api.devices[arg].location())
         elif opt in ("-s", "--status"):
             print(api.devices[arg].status())
-        elif opt in ("-p", "--play_sound"):
+            #print(arg)
+        elif opt in ("-p", "--playsound"):
             print(api.devices[arg].play_sound())
 
-asyncio.run(run())
+asyncio.run(icloud())
