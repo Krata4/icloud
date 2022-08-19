@@ -12,12 +12,15 @@ async def icloud():
         if opt in ("-d", "--devices"):
             print("devices:")
             print(api.devices)
+            print(",")
         elif opt in ("-l", "--localization"):
             print("localization:")
             print(api.devices[arg].location())
+            print(",")
         elif opt in ("-s", "--status"):
             print("status:")
             print(api.devices[arg].status())
+            print(",")
         elif opt in ("-p", "--playsound"):
             print(api.devices[arg].play_sound())
     print(f"}}")
