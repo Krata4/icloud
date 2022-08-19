@@ -1,2 +1,2 @@
 # icloud
-icloud library which is using pyicloud
+icloud script which is using pyicloud
