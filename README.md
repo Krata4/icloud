@@ -1,4 +1,4 @@
-# icloud script
+# Openhab icloud script
 Script for getting data from icloud. This script is using pyicloud. This is layer for integration to openhab only.
 
 ## Installation and setup steps
